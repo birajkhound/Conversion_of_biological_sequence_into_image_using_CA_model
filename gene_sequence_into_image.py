@@ -15,8 +15,16 @@ def read_fasta_file(fasta_filename):
     with open(fasta_filename, "r") as fasta_file:
         for line in fasta_file:
             if not line.startswith(">"):  # Skip header lines
-                # Create a dictionary for the characters to replace and their replacements
-                replacements = {'A': '00', 'T': '01', 'G': '10','C':'11'}
+                               # Create a dictionary for the characters to replace and their replacements
+
+                # if your sequence is a gene sequence then uncomment the bellow line
+                # replacements = {'A': '00', 'T': '01', 'G': '10','C':'11'}
+
+                # if your sequence is a RNA sequence then uncomment the bellow line
+                # replacements = {'A': '00', 'U': '01', 'G': '10','C':'11'}
+                
+                # if your sequence is a protein sequence then uncomment the bellow line
+                # replacements = {'P': '00001', 'Q': '00100', 'R': '00110','Y':'01100', 'W': '01110', 'T': '10000','M': '10011','N': '10101', 'V': '11010', 'E' : '11101', 'L': '00011', 'H': '00101', 'S': '01001', 'F': '01011', 'C': '01111', 'I': '10010', 'K': '10100', 'A': '11001', 'D' : '11100', 'G': '11110'}
                 # Create a translation table using str.maketrans()
                 translation_table = str.maketrans(replacements)
                 # Use the translate method to replace the characters
