@@ -18,10 +18,10 @@ def read_fasta_file(fasta_filename):
                                # Create a dictionary for the characters to replace and their replacements
 
                 # if your sequence is a gene sequence then uncomment the bellow line
-                # replacements = {'A': '00', 'T': '01', 'G': '10','C':'11'}
+                # replacements = {'C': '00', 'T': '01', 'A': '10','G':'11'}
 
                 # if your sequence is a RNA sequence then uncomment the bellow line
-                # replacements = {'A': '00', 'U': '01', 'G': '10','C':'11'}
+                # replacements = {'C': '00', 'U': '01', 'A': '10','G':'11'}
                 
                 # if your sequence is a protein sequence then uncomment the bellow line
                 # replacements = {'P': '00001', 'Q': '00100', 'R': '00110','Y':'01100', 'W': '01110', 'T': '10000','M': '10011','N': '10101', 'V': '11010', 'E' : '11101', 'L': '00011', 'H': '00101', 'S': '01001', 'F': '01011', 'C': '01111', 'I': '10010', 'K': '10100', 'A': '11001', 'D' : '11100', 'G': '11110'}
