@@ -3,8 +3,8 @@ This experiment is based on a research paper named "Using cellular automata to g
 This paper is open source.
 I converted the gene sequence into binary sequence by using the following rules - 
   - The 4 kinds of bases are arranged in an order according to the molecular weight: C=111.1, U=112.1, A=135.13, G=151.13, so the code is 0123/CUAG. So, to preserve the symmetry within    	complementary and stationary of RNA coding strands, the representation of four nucleotide bases by binary notation is followed as given below:
-	1. Pyrimidines(Y) : 0(00)C and 2(10)U
-	2. Purines(R) : 1(01)A and 3(11)G
+	1. Pyrimidines(Y) : 0(00)C and 1(01)U
+	2. Purines(R) : 2(10)A and 3(11)G
   - The code 0123/CUAG can reflect the chemical properties of 4 kinds of bases. The first digit in binary coding of the base is called a structural encoding bit. In the case of Pyrimidines(Y), the first digit of the binary code is 0 and in Purines(R) it is 1. The end digit is the encoding bit for the functional gene group 1 denotes the keto group and 0 denotes the amino group.
 
 Second I code for the CA model to generate images corresponding to the gene sequences. 
