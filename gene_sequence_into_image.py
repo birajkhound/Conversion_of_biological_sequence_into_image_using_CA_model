@@ -17,7 +17,7 @@ def read_fasta_file(fasta_filename):
             if not line.startswith(">"):  # Skip header lines
                  # Create a dictionary for the characters to replace and their replacements
 
-                # if your sequence is a gene sequence then uncomment the bellow line
+                # if your sequence is a DNA sequence then uncomment the bellow line
                  replacements = {'C': '00', 'T': '01', 'A': '10','G':'11'}
 
                 # if your sequence is a RNA sequence then uncomment the bellow line
