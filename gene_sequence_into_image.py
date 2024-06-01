@@ -15,10 +15,10 @@ def read_fasta_file(fasta_filename):
     with open(fasta_filename, "r") as fasta_file:
         for line in fasta_file:
             if not line.startswith(">"):  # Skip header lines
-                               # Create a dictionary for the characters to replace and their replacements
+                 # Create a dictionary for the characters to replace and their replacements
 
                 # if your sequence is a gene sequence then uncomment the bellow line
-                # replacements = {'C': '00', 'T': '01', 'A': '10','G':'11'}
+                 replacements = {'C': '00', 'T': '01', 'A': '10','G':'11'}
 
                 # if your sequence is a RNA sequence then uncomment the bellow line
                 # replacements = {'C': '00', 'U': '01', 'A': '10','G':'11'}
@@ -133,7 +133,7 @@ def generate_rule(rule):
 
 # This function is the entry point of the program.
 def main():
-    fasta_filename = str(input("enter the txt file address of the gene sequance :"))
+    fasta_filename = str(input("enter the fasta file address of the gene sequance :"))
     first_row = read_fasta_file(fasta_filename)
     n_cells = len(first_row)
     n_generations = 999
